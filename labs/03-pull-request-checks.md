@@ -15,9 +15,16 @@ Complete Lab 02 and have permission to open pull requests.
 ## Steps
 
 
+
 1. Update the CI trigger to include pull requests if it is not already present.
 
-   ```yaml
+  ```bash
+     cd .github/workflows
+   vi nodejs-ci.yml
+   ```
+Make sure the part below exists
+
+```yaml
    on:
      push:
        branches:
@@ -30,7 +37,7 @@ Complete Lab 02 and have permission to open pull requests.
 2. Create a feature branch.
 
    ```bash
-   git checkout -b feature/break-health-test
+   git checkout -b feat/break-health-test
    ```
 
 3. Break the health test intentionally. In `app/test/app.test.js`, change:
@@ -48,7 +55,7 @@ Complete Lab 02 and have permission to open pull requests.
 4. Commit and push.
 
    ```bash
-   git add app/test/app.test.js
+   git add .
    git commit -m "Break health test for PR check demo"
    git push -u origin feature/break-health-test
    ```
