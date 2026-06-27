@@ -3,7 +3,7 @@ const test = require("node:test");
 const { healthPayload, rootPayload, versionPayload } = require("../src/app");
 
 test("healthPayload returns ok", () => {
-  assert.deepEqual(healthPayload(), { status: "broken" });
+  assert.deepEqual(healthPayload(), { status: "ok" });
 });
 
 test("versionPayload returns app metadata", () => {
@@ -17,3 +17,4 @@ test("rootPayload returns service message", () => {
   assert.equal(rootPayload().service, "github-actions-training-app");
   assert.match(rootPayload().message, /GitHub Actions training app/);
 });
+
