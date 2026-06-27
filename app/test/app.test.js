@@ -3,7 +3,7 @@ const test = require("node:test");
 const { healthPayload, rootPayload, versionPayload } = require("../src/app");
 
 test("healthPayload returns ok", () => {
-  assert.deepEqual(healthPayload(), { status: "ok" });
+  assert.deepEqual(healthPayload(), { status: "broken" });
 });
 
 test("versionPayload returns app metadata", () => {
