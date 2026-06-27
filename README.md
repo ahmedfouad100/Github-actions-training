@@ -1,4 +1,4 @@
-# GitHub Actions CI/CD + CI Fundamentals
+# GitHub Actions CI/CD + CI Fundamentals 
 
 Hands-on labs for the **GitHub Actions CI/CD + CI Fundamentals** training.
 
